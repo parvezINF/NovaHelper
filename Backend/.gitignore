@@ -1,0 +1,76 @@
+# ============================================
+# Node.js dependencies - SHOULD NOT be pushed
+# ============================================
+
+# node_modules/ - Contains installed packages via npm/yarn. 
+# These can be huge and are regenerated with `npm install`.
+# The trailing slash means it's a folder.
+node_modules/
+
+# ============================================
+# Environment files - contain sensitive info
+# ============================================
+
+# .env - Environment configuration (e.g. DB passwords, API keys).
+# Never push these to a repo for security reasons.
+.env
+
+# .env.* - Covers all environment variants like:
+# .env.local, .env.production, .env.development
+.env.*
+
+# ============================================
+# Logs - runtime debug/error files, not useful in git
+# ============================================
+
+# logs/ - Custom log folder, if your app writes logs here.
+logs/
+
+# *.log - Any log files in root or subdirectories.
+*.log
+
+# npm, yarn, pnpm debug logs from failed installs or runs.
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# ============================================
+# Build output - generated files, not source code
+# ============================================
+
+# dist/ - Common folder for compiled files (e.g. TypeScript, Webpack)
+dist/
+
+# build/ - Used by frameworks like React, Angular, etc.
+build/
+
+# These folders are regenerated on each build and don't need versioning.
+
+# ============================================
+# System files - specific to OS, not project
+# ============================================
+
+# .DS_Store - macOS finder metadata
+.DS_Store
+
+# Thumbs.db - Windows thumbnail cache
+Thumbs.db
+
+# ============================================
+# Editor/IDE configurations - personal settings
+# ============================================
+
+# .vscode/ - Visual Studio Code user settings (should be personal)
+.vscode/
+
+# .idea/ - JetBrains IDEs like WebStorm, IntelliJ
+.idea/
+
+# These folders contain developer-specific configurations, not project logic.
+
+# ============================================
+# Test coverage - output of test tools
+# ============================================
+
+# coverage/ - Code coverage results from tools like Jest or nyc
+coverage/
